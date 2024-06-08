@@ -1,0 +1,41 @@
+{
+  "name": "codemirror-lang-phix",
+  "description": "A codemirror.next mode for phix.",
+  "version": "3.0.1",
+  "type": "module",
+  "main": "index.cjs",
+  "module": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "prepare": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petelomax/codemirror-lang-phix.git"
+  },
+  "keywords": [
+    "codemirror",
+    "phix"
+  ],
+  "author": "Pete Lomax <petelomax@ymail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/petelomax/codemirror-lang-phix/issues"
+  },
+  "homepage": "https://github.com/petelomax/codemirror-lang-phix#readme",
+  "peerDependencies": {
+    "@codemirror/language": "^6.2.1"
+  },
+  "devDependencies": {
+    "@codemirror/language": "^6.2.1",
+    "rollup": "2.60.0"
+  }
+}
